@@ -1,0 +1,31 @@
+git config --version
+git config --global user.name "****"
+git config --global user.email "****"
+git config --list
+
+
+git init
+git status
+
+git add .	//add files to staging area then they are commited
+git commit -m "first commit"	//adding message through m
+git log --oneline	//log of all commits
+
+
+//to commit modified file
+git add .
+git commit -m "second commit"
+
+git checkout <commit> <file>	//checkout file from older commit
+
+git reset HEAD <file>
+git checkout --<file>	//To revert the changes made earlier
+
+//Online git repos command
+git remote add origin <url>	//Add remote online repos
+git push -u origin master	//push local git repo to origin of master branch
+
+git clone <url>	
+
+//To remove remote
+git remote rm <name> 	//name can be origin or destination
